@@ -21,7 +21,6 @@ module "account_ataya_prod" {
 
   aft_management_account_id = local.aft_management_account_id
 
-  # account_customizations_name = "ataya-prod-baseline"
 }
 
 output "account_ataya_prod_id" {
