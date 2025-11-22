@@ -2,6 +2,10 @@ module "account_ataya_dev" {
   source  = "aws-ia/control_tower_account_factory/aws//modules/aft-account-request-framework"
   version = "1.17.0"
 
+    providers = {
+    aws.ct_management = aws.ct_management
+  }
+
   # Obligatoire : paramètres Control Tower pour la création du compte
   control_tower_parameters = {
     AccountEmail              = "finance@activtips.com"           # email unique
