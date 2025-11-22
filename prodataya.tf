@@ -1,5 +1,6 @@
 module "account_ataya_prod" {
-  source = "github.com/aws-ia/terraform-aws-control_tower_account_factory//modules/aft-account-request"
+  source  = "aws-ia/control_tower_account_factory/aws//modules/aft-account-request-framework"
+  version = "1.17.0"
 
   control_tower_parameters = {
     AccountEmail              = "info@activtips.com"
